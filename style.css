@@ -11,6 +11,10 @@
     padding: 2px;
 }
 
+.exposify-close {
+    color: white;
+}
+
 .exposify-link {
     color: black;
     text-decoration: underline dotted black;
