@@ -1,11 +1,11 @@
 // Exposify - by jay3ss
 (function() {
     // callback function to remove the warning
-    // const closeWarning = (e) => {
-    //     const warningElem = document.querySelector('.exposify-warning');
-    //     warningElem.remove();
-    // }
-    const closeWarning = (e) => { alert('Clicked'); }
+    const closeWarning = (e) => {
+        const warningElem = document.querySelector('.exposify-warning');
+        warningElem.remove();
+    }
+
     // Put a red border around the entire page
     const borderSize = 5;
     document.body.style.border = `${borderSize}px solid red`;
