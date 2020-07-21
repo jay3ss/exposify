@@ -1,5 +1,11 @@
 // Exposify - by jay3ss
 (function() {
+    // callback function to remove the warning
+    // const closeWarning = (e) => {
+    //     const warningElem = document.querySelector('.exposify-warning');
+    //     warningElem.remove();
+    // }
+    const closeWarning = (e) => { alert('Clicked'); }
     // Put a red border around the entire page
     const borderSize = 5;
     document.body.style.border = `${borderSize}px solid red`;
@@ -26,6 +32,15 @@
     
     pElement.appendChild(infoLink);
     pElement.className = 'exposify-warning';
+
+    // add an on-click event listener to remove the warning
+    spanElem = document.createElement('span');
+    spanElem.textContent = '✖';
+    spanElem.className = 'exposify-close'
+    spanElem.addEventListener('click', closeWarning);
+    pElement.appendChild(spanElem);
+
+    // add the content to the DOM
     document.body.prepend(pElement);
     const firstElemMargintop = Math.floor(pElement.getBoundingClientRect().height);
     firstElem.style.marginTop = `${firstElemMargintop-borderSize-1}px`;
