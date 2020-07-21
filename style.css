@@ -1,0 +1,22 @@
+.exposify-warning {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: red;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    top: 0;
+    padding: 2px;
+}
+
+.exposify-link {
+    color: black;
+    text-decoration: underline dotted black;
+}
+
+.exposify-link:hover {
+    color: #323232;
+    text-decoration: underline dotted #323232;
+}
