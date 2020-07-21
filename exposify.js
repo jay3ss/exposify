@@ -4,8 +4,12 @@
     const closeWarning = (e) => {
         const warningElem = document.querySelector('.exposify-warning');
         warningElem.remove();
-    }
 
+        const firstElem = document.body.firstElementChild;
+        firstElem.style.marginTop = '0px';
+
+        alert(`${firstElem.className}`);
+    }
     // Put a red border around the entire page
     const borderSize = 5;
     document.body.style.border = `${borderSize}px solid red`;
