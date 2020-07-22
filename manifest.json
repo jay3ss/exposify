@@ -12,7 +12,7 @@
     },
     "browser_specific_settings": {
         "gecko": {
-	       "id": "mentoce@gmail.com"
+	       "id": "extension@jayess.addons.mozillaorg"
 	   }
     },
     "content_scripts": [
