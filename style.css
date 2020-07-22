@@ -13,6 +13,7 @@
 
 .exposify-close {
     color: white;
+    cursor: pointer;
 }
 
 .exposify-link {
