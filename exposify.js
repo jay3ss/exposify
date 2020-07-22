@@ -43,7 +43,7 @@
     spanElem.addEventListener('click', function(){closeWarning(borderSize)});
     pElement.appendChild(spanElem);
 
-    // add the content to the DOM
+    // add the content to the DOM and move the content down
     document.body.prepend(pElement);
     const firstElemMargintop = Math.floor(pElement.getBoundingClientRect().height);
     firstElem.style.marginTop = `${firstElemMargintop-borderSize-1}px`;
