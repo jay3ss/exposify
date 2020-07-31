@@ -10,11 +10,6 @@
         "64": "icons/exposify.svg",
         "96": "icons/exposify.svg"
     },
-    "browser_specific_settings": {
-        "gecko": {
-	       "id": "extension@jayess.addons.mozillaorg"
-	   }
-    },
     "content_scripts": [
         {
             "js": [
