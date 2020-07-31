@@ -32,7 +32,7 @@
     infoLink.title = "The Billion-Dollar Disinformation Campaign to Reelect the President"
     infoLink.text = "Click here for more info.";
     infoLink.className = "exposify-link";
-    
+
     pElement.appendChild(infoLink);
     pElement.className = 'exposify-warning';
 
@@ -48,5 +48,3 @@
     const firstElemMargintop = Math.floor(pElement.getBoundingClientRect().height);
     firstElem.style.marginTop = `${firstElemMargintop-borderSize-1}px`;
 })();
-
-// "&#x274c;"
