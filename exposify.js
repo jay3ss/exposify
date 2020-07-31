@@ -1,6 +1,7 @@
 // Exposify - by jay3ss
 (function() {
-    // callback function to remove the warning and move the first element back up
+    // callback function to remove the warning and move the first
+    // element back up
     const closeWarning = (marginSize) => {
         const warningElem = document.querySelector('.exposify-warning');
         warningElem.remove();
@@ -26,10 +27,12 @@
 
     // add a link to the warning
     const infoLink = document.createElement('a');
-    const infoURL = "https://www.theatlantic.com/magazine/archive/2020/03/the-2020-disinformation-war/605530/";
+    const infoURL = "https://www.theatlantic.com/magazine/archive"
+                  + "/2020/03/the-2020-disinformation-war/605530/";
     infoLink.href = infoURL;
     infoLink.target = "_blank";
-    infoLink.title = "The Billion-Dollar Disinformation Campaign to Reelect the President"
+    infoLink.title = "The Billion-Dollar Disinformation "
+                   + "Campaign to Reelect the President";
     infoLink.text = "Click here for more info.";
     infoLink.className = "exposify-link";
 
@@ -45,6 +48,7 @@
 
     // add the content to the DOM and move the content down
     document.body.prepend(pElement);
-    const firstElemMargintop = Math.floor(pElement.getBoundingClientRect().height);
+    const firstElemMargintop = Math.floor(
+        pElement.getBoundingClientRect().height);
     firstElem.style.marginTop = `${firstElemMargintop-borderSize-1}px`;
 })();
